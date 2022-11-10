@@ -20,7 +20,7 @@
         },
         methods: {
             getToken() {
-                this.$axios.post('http://127.0.0.1:8000/api-token-auth/', {
+                this.$axios.post('https://blogbackend.malavikasmenon.repl.co/api-token-auth/', {
                     'username': this.username,
                     'password': this.password,
                 })
