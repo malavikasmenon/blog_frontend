@@ -1,13 +1,13 @@
 <template>
     <div class="main-container">
         <div class="main-heading">
-            <h1>The World of {{blogType}}</h1>
+            <h1 class="text-capitalize">The World of {{blogType}}</h1>
         </div>
         <hr />
         <div class="main-content">
-            <b-dropdown text="Categories" variant="outline-dark" class="m-2">
+            <!-- <b-dropdown text="Categories" variant="outline-dark" class="m-2">
                 <b-dropdown-item v-for="tag in tags">{{tag}}</b-dropdown-item>
-            </b-dropdown> 
+            </b-dropdown>  -->
             <b-card-group deck class="card-group pt-5">
                 <div v-for="blog in posts">
                     <NuxtLink :to="`${blogType}/${blog.slug_field}`">
@@ -44,7 +44,7 @@ export default {
 <style scoped>
 .main-heading {
   text-align: center;
-  padding-top: 3%;
+  /* padding-top: 3%; */
 }
 .main-content {
   /* border: 1px solid black; */

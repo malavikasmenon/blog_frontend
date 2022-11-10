@@ -3,7 +3,7 @@
     <div class="main-heading">
       <h1>The Fictional World</h1>
       <h2>- Malavika S. Menon</h2>
-      <hr></hr>
+      <hr>
     </div>
     <div class="main-content px-5 mt-5">
       <p>
@@ -45,7 +45,7 @@ export default {
 }
 .main-heading {
   text-align: center;
-  padding-top: 3%;
+  /* padding-top: 3%; */
 }
 .main-content {
   /* border: 1px solid black; */

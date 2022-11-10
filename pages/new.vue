@@ -1,6 +1,6 @@
 <template>
-    <section class="main-container">
-        <input type="text" class="title mt-5" v-model="title" placeholder="Enter title">
+    <section class="main-container" v-if="isLoggedIn">
+        <input type="text" class="title" v-model="title" placeholder="Enter title">
         <textarea rows="17" class="content mt-5" v-model="content" placeholder="Enter content"> </textarea>
         <select v-model="selectedType" class="mb-5 dropdown" label="Options"> 
             <option disabled value="">Please select one</option>
@@ -16,6 +16,10 @@
         <br>
         <button v-on:click="addPost" class="btn bg-dark text-white my-5">Add Post</button>
         <p class="success-msg">{{successMessage}}</p>
+    </section>
+    <section class="login p-5" v-else>
+        <p>You are not logged in. Please log in with admin credentials to write post</p>
+        <NuxtLink to="/login"><button class="bg-dark text-white">Login</button></NuxtLink>
     </section>
 </template>
 
@@ -51,6 +55,18 @@
                     .then(response => this.successMessage = "Successfully submitted")
                     .catch(error => console.log(error))
             }
+        },
+        computed: {
+            isLoggedIn() {
+                if(process.client){
+                    if(localStorage.getItem('authToken')){
+                    console.log(localStorage.getItem('authToken'))
+                    return true              
+                    }
+                }
+                console.log("not logged in")
+                return false
+            },
         },
     }
 </script>

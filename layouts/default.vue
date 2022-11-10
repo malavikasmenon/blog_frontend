@@ -1,6 +1,22 @@
 <template>
+  <div>
+    <Navbar />
     <Nuxt />
+  </div>
   </template>
+
+  <script>
+    import { BIcon, BIconHouseDoorFill } from 'bootstrap-vue'
+    import Navbar from '@/components/Navbar.vue';
+    
+    export default {
+      components: {
+        Navbar,
+        BIcon,
+        BIconHouseDoorFill
+      }
+    }
+  </script>
   
   <style>
   html, body {

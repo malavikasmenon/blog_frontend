@@ -50,6 +50,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
+    // 'vue-cookies',
   ],
 
 
