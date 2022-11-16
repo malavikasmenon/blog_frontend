@@ -52,4 +52,9 @@
     max-width: 30%;
     text-align: center;
 }
+@media (max-width:768px) {
+.login-box {
+    max-width: 80%;
+}
+}
 </style>
