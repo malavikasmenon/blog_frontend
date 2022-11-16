@@ -59,10 +59,19 @@ export default {
   margin-right: 5%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card {
   border-radius: 20px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   width: 350px;
+  background-color: #fff2f2;
+}
+@media (max-width:768px) {
+  .card {
+    /* min-width: 60%; */
+    /* margin-left: 0; */
+    width: 80vw;
+  }
 }
 </style>

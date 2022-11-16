@@ -25,4 +25,10 @@ export default {
    /* border: 1px solid black; */
    padding: 1%;
 }
+@media (max-width:768px) {
+.nav-container{
+    padding: 5%;
+    font-size: xx-small;
+}
+}
 </style>

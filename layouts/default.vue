@@ -34,5 +34,13 @@ a:hover {
   color: black;
   text-decoration: none;
 }
+@media (max-width:768px) {
+h1{
+    font-size: xx-large;
+}
+p{
+  font-size: medium;
+}
+}
   </style>
   
