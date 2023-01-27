@@ -10,7 +10,7 @@
             </b-dropdown>  -->
             <b-card-group deck class="card-group pt-5">
                 <div v-for="blog in posts">
-                    <NuxtLink :to="`${blogType}/${blog.slug_field}`">
+                    <NuxtLink :to="`/${blogType}/${blog.slug_field}`">
                         <b-card class="card mx-5 mb-5" :title="blog.title" :img-src="blog.image_url" img-height="250" img-alt="Movies" img-top>
                         </b-card>
                     </NuxtLink>
