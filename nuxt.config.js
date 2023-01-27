@@ -77,6 +77,10 @@ export default {
     trailingSlash: false
   },
 
+  sitemap: {
+    trailingSlash: false
+  },
+
   googleFonts: {
     families: {
       Roboto: true,
