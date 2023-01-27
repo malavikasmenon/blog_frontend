@@ -73,6 +73,10 @@ export default {
     }
   },
 
+  router: {
+    trailingSlash: false
+  },
+
   googleFonts: {
     families: {
       Roboto: true,
