@@ -1,3 +1,4 @@
+import axios from 'axios'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -53,13 +54,23 @@ export default {
     // 'vue-cookies',
   ],
 
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
   axios: {
 
+  },
+
+  generate: {
+    routes: function () {
+      return axios.get('https://blogbackend.malavikasmenon.repl.co/posts/')
+      .then((res) => {
+        return res.data.map((post) => {
+          return post.post_type + '/' + post.slug_field
+        })
+      })
+    }
   },
 
   googleFonts: {
