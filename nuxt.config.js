@@ -74,11 +74,11 @@ export default {
   },
 
   router: {
-    trailingSlash: false
+    trailingSlash: true
   },
 
   sitemap: {
-    trailingSlash: false
+    trailingSlash: true
   },
 
   googleFonts: {
