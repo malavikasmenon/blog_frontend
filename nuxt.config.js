@@ -73,13 +73,13 @@ export default {
     }
   },
 
-  router: {
-    trailingSlash: true
-  },
+  // router: {
+  //   trailingSlash: true
+  // },
 
-  sitemap: {
-    trailingSlash: true
-  },
+  // sitemap: {
+  //   trailingSlash: true
+  // },
 
   googleFonts: {
     families: {
