@@ -1,5 +1,7 @@
 # blog_frontend
 
+For checking out the backend code, visit [blog_backend](https://github.com/malavikasmenon/blog_backend)
+
 ## Build Setup
 
 ```bash
